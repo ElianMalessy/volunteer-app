@@ -7,11 +7,13 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import HomeScreen from './screens/HomeScreen';
 import DetailsScreen from './screens/DetailsScreen';
 import SettingsScreen from './screens/SettingsScreen';
+import ReviewScreen from './screens/ReviewScreen';
 
 //Screen names
 const homeName = "Home";
 const detailsName = "Opportunites";
 const settingsName = "Settings";
+const reviewName = "Review";
 
 const Tab = createBottomTabNavigator();
 
@@ -33,9 +35,12 @@ function MainContainer() {
 
             } else if (rn === settingsName) {
               iconName = focused ? 'settings' : 'settings-outline';
+
+            } else if (rn === reviewName) {
+              iconName = focused 
             }
 
-            // You can return any component that you like here!
+            //customize
             return <Ionicons name={iconName} size={size} color={color} />;
           },
         })}

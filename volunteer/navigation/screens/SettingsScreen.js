@@ -1,13 +1,33 @@
 import * as React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ScrollView, Button, Link, Image } from 'react-native';
 import { globalStyles } from '../styles/global.js';
 import Card from '../styles/card.js';
+import { containerStyles  } from '../styles/container.js';
+
 
 export default function ProfileScreen({navigation}) {
+
+    const pressHandler = () => {
+        navigation.navigate('homeName');
+    }
+
     return(
-        <View style={globalStyles.container}>
-            
-        </View>
+        <ScrollView style={globalStyles.container} showsVerticalScrollIndicator={false}>
+        <Image
+          style={{width: '50%', height: '90%', margin: 'auto'}}
+          source={require('../assets/avatar.png')}
+      />            <Card>
+                <Button title='Username' onPress={pressHandler} />
+            </Card>
+            <Card>
+                <Text style={globalStyles.centertext}>Email</Text>
+            </Card>
+            <Card>
+                <Text style={globalStyles.centertext}>
+                    Notifications
+                </Text>
+            </Card>
+        </ScrollView>
     );
 }
 
