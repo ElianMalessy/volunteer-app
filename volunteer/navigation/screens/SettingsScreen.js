@@ -13,10 +13,7 @@ export default function ProfileScreen({navigation}) {
 
     return(
         <ScrollView style={globalStyles.container} showsVerticalScrollIndicator={false}>
-        <Image
-          style={{width: '50%', height: '90%', margin: 'auto'}}
-          source={require('../assets/avatar.png')}
-      />            <Card>
+            <Card>
                 <Button title='Username' onPress={pressHandler} />
             </Card>
             <Card>
@@ -30,4 +27,3 @@ export default function ProfileScreen({navigation}) {
         </ScrollView>
     );
 }
-

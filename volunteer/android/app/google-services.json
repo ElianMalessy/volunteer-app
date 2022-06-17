@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "787603372052",
+    "project_id": "volunteer-app-857b5",
+    "storage_bucket": "volunteer-app-857b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787603372052:android:3ec5681f07427a5586cf01",
+        "android_client_info": {
+          "package_name": "com.dwang88.volunteer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787603372052-lackgqe1il9rka3nthr23ul0bo9faldf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsMhhfU7i8VbeKIDmWK2LIJgZMgoLUNWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787603372052-lackgqe1il9rka3nthr23ul0bo9faldf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "787603372052-5q7s7ijtgja8n7mmqbhl5ko1q61e64jj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.reactnativefirebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
