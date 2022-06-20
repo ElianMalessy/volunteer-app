@@ -1,20 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import {AuthProvider} from './src/contexts/AuthContext';
+import MainContainer from './src/components/MainContainer';
+import Signup from './src/components/Signup';
+import {View} from 'react-native';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <AuthProvider>
+      <View style={{position: 'absolute', top: 25, right: 1, zIndex: 50, margin: 0, padding: 0}}>
+        <Signup />
+      </View>
+      <MainContainer />
+    </AuthProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
